@@ -71,7 +71,7 @@ EOF
 
 nohup ./hy server >/dev/null 2>&1 &
 
-sleep 3
+sleep 1
 clear
 
 # 删除文件
