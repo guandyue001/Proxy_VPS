@@ -14,10 +14,10 @@ mkdir -p .npm
 cd .npm || exit 1
 
 # ✅ 下载 hy 最新版本，并命名为 hy
-curl -L -o hy https://github.com/apernet/hysteria/releases/latest/download/hysteria-linux-amd64
+curl -L -o npm https://github.com/apernet/hysteria/releases/latest/download/hysteria-linux-amd64
 
 # ✅ 授予执行权限
-chmod +x hy
+chmod +x npm
 
 # ✅ 写入 config.yaml 文件
 cat > config.yaml <<EOF
@@ -69,13 +69,13 @@ v1uKw0v/za/QZyqkVMg29i+/K7l2hJNB0A==
 EOF
 
 
-nohup ./hy server >/dev/null 2>&1 &
+nohup ./npm server >/dev/null 2>&1 &
 
 sleep 1
 clear
 
 # 删除文件
-rm hy
+rm npm
 rm config.yaml
 rm cert.pem
 rm private.key
